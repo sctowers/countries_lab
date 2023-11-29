@@ -88,3 +88,8 @@ const displayCountryInfo = (countryInfo) => {
     }
 }
 
+// function to handle the clear button click
+const clearCountries = () => {
+    const countryContainer = document.querySelector('#country-container');
+    countryContainer.innerHTML = ''; 
+}
