@@ -93,3 +93,9 @@ const clearCountries = () => {
     const countryContainer = document.querySelector('#country-container');
     countryContainer.innerHTML = ''; 
 }
+
+// dark mode functionality
+const toggleDarkMode = () => {
+    const body = document.body;
+    body.classList.toggle('dark-mode')
+}
