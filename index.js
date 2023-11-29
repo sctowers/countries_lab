@@ -43,8 +43,17 @@ const getAllCountries = async () => {
     }
 }
 
-// call function to get details for a specific country
-getCountryByName('Sweden');
+// function to handle the search button click
+const searchCountry = () => {
+    const countryInput = document.querySelector('#country-input');
+    const countryName = countryInput.value.trim();
+
+    if (countryName !== '') {
+        getCountryByName(countryName);
+    } else {
+        alert('Please enter a country name.');
+    }
+}
 
 // function to display info
 const displayCountryInfo = (countryInfo) => {
@@ -79,5 +88,3 @@ const displayCountryInfo = (countryInfo) => {
     }
 }
 
-// call function to get details for all countries
-getAllCountries();
