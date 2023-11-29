@@ -15,7 +15,7 @@ body {
 
 h1 {
     color: #c51350;
-    font-size: 26px;
+    font-size: 60px;
 }
 
 button {
@@ -51,5 +51,17 @@ body.dark-mode {
     color: #fda403;
 }
 
+body.dark-mode #country-info {
+    background-color: black;
+}
 
 
+body.dark-mode h1 {
+    color: #e8751a;
+}
+
+body.dark-mode input {
+    background-color: #8a1253;
+    color: #fda403;
+    
+}
